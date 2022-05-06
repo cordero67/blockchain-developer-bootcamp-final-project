@@ -550,7 +550,7 @@ class App extends Component {
     });
 
     // updates gaTicketDetails
-    this.retrieveEventData();
+    this.retrieveBlockData();
   };
 
   updateNewEvent = (event) => {
@@ -1782,7 +1782,7 @@ class App extends Component {
             <button
               className={classes.ButtonGreySmall}
               onClick={async () => {
-                this.retrieveEventData();
+                this.retrieveBlockData();
                 this.setState({
                   transferOrder: {},
                   modal: "none",
@@ -1989,7 +1989,7 @@ class App extends Component {
             <button
               className={classes.ButtonGreySmall}
               onClick={async () => {
-                this.retrieveEventData();
+                this.retrieveBlockData();
                 this.setState({
                   newOrder: {},
                   display: "myTickets",
@@ -2175,7 +2175,7 @@ class App extends Component {
             <button
               className={classes.ButtonGreySmall}
               onClick={async () => {
-                this.retrieveEventData();
+                this.retrieveBlockData();
                 this.setState({
                   newEvent: { name: "", symbol: "", initial: "", price: "" },
                   display: "myEvents",
