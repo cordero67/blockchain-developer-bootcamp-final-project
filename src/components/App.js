@@ -59,7 +59,7 @@ class App extends Component {
   };
 
   componentDidMount = async () => {
-    await this.detectAccountChange();
+    //await this.detectAccountChange();
     try {
       // creates instance of "Web3" by calling "getWeb3"
       const web3 = await getWeb3();
